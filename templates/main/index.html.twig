@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Witaj na stronie Symfony z htmx (index)!</h1>
+    <button
+        hx-get="{{ path('main_index_partial') }}"
+        hx-target="#wynik"
+        hx-swap="innerHTML"
+    >
+        Załaduj powitanie AJAX-em
+    </button>
+    <div id="wynik"></div>
+{% endblock %}
