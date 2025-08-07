@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/dbal": "^3",
@@ -20,6 +20,7 @@
         "symfony/framework-bundle": "7.3.*",
         "symfony/monolog-bundle": "^3.0",
         "symfony/runtime": "7.3.*",
+        "symfony/security-bundle": "7.3.*",
         "symfony/twig-bundle": "7.3.*",
         "symfony/yaml": "7.3.*",
         "symfonycasts/tailwind-bundle": "^0.11.1",
@@ -79,6 +80,7 @@
     },
     "require-dev": {
         "symfony/debug-bundle": "7.3.*",
+        "symfony/maker-bundle": "^1.64",
         "symfony/stopwatch": "7.3.*",
         "symfony/web-profiler-bundle": "7.3.*"
     }
