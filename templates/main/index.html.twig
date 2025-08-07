@@ -1,13 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Witaj na stronie Symfony z htmx (index)!</h1>
-    <button
-        hx-get="{{ path('main_index_partial') }}"
-        hx-target="#wynik"
-        hx-swap="innerHTML"
-    >
-        Załaduj powitanie AJAX-em
-    </button>
-    <div id="wynik"></div>
+    <section class="max-w-3xl mx-auto mt-12 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Welcome to Your Homepage!</h1>
+        <p class="text-lg text-gray-600 mb-8">
+            Build fast, dynamic sites with <span class="font-bold">HTMX</span> and modern styles from <span class="font-bold">TailwindCSS 4.1</span>.
+        </p>
+        <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition">Get Started</a>
+    </section>
 {% endblock %}

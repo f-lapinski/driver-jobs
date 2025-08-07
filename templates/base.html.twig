@@ -12,8 +12,8 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body>
-        <img src="{{ asset('images/logo.png') }}" alt="Website logo with Driver Jobs name" height="100vh">
+    <body class="bg-gray-100 font-sans">
+        {{ include('_navbar.html.twig') }}
         {% block body %}{% endblock %}
     </body>
 </html>
