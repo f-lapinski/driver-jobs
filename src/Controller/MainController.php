@@ -10,15 +10,9 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/', name: 'main_index')]
+    #[Route('/', name: 'app_main_index', methods: ['GET'])]
     public function index(): Response
     {
         return $this->render('main/index.html.twig');
-    }
-
-    #[Route('/index-partial', name: 'main_index_partial')]
-    public function indexPartial(): Response
-    {
-        return $this->render('main/_index_partial.html.twig');
     }
 }
